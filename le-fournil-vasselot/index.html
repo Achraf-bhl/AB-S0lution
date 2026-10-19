@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFC94A">
+<title>Le Fournil Vasselot – Boulangerie et cookies à Rennes</title>
+<meta name="description" content="Le Fournil Vasselot, boulangerie-pâtisserie au 13 rue Vasselot à Rennes : cookies caramel beurre salé, cacahuète, spéculoos, kouign-amann, canelés et pain au four.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Le Fournil Vasselot",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "13 rue Vasselot",
+    "postalCode": "35000",
+    "addressLocality": "Rennes",
+    "addressCountry": "FR"
+  },
+  "telephone": "+33299790207",
+  "geo": { "@type": "GeoCoordinates", "latitude": 48.1086665, "longitude": -1.6784027 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "07:00",
+    "closes": "20:00"
+  }]
+}
+</script>
+</head>
+<body data-flavor="caramel">
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <a class="brand" href="#" aria-label="Le Fournil Vasselot, accueil">
+    <span class="brand-mark" aria-hidden="true"></span>
+    Le Fournil Vasselot
+  </a>
+  <nav aria-label="Navigation principale">
+    <a href="#cookies">Cookies</a>
+    <a href="#four">Au four</a>
+    <a href="#commande">Commande</a>
+    <a href="#infos">Venir nous voir</a>
+  </nav>
+</header>
+
+<main id="contenu">
+  <section class="hero" aria-labelledby="titre">
+    <div class="hero-copy">
+      <p class="status" data-open-status hidden></p>
+      <h1 id="titre">Les cookies de la rue Vasselot</h1>
+      <p class="lede">Boulangerie-pâtisserie à Rennes. Caramel beurre salé, cacahuète, spéculoos : choisissez le vôtre, le pain est juste à côté.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#infos">Voir les horaires</a>
+        <a class="btn btn-ghost" href="#cookies">Les saveurs</a>
+      </div>
+    </div>
+
+    <div class="hero-cookie">
+      <button class="cookie-btn" type="button" data-bite aria-label="Croquer le cookie">
+        <svg class="cookie" data-cookie viewBox="0 0 240 240" role="img" aria-label="Illustration d’un cookie"></svg>
+      </button>
+      <p class="hint" aria-live="polite" data-hint>Touchez le cookie pour croquer.</p>
+    </div>
+  </section>
+
+  <section class="flavors" id="cookies" aria-labelledby="saveurs">
+    <h2 id="saveurs">Trois cookies, un seul dilemme</h2>
+    <div class="flavor-grid" role="radiogroup" aria-labelledby="saveurs">
+      <button class="flavor" role="radio" aria-checked="true" data-pick="caramel" type="button">
+        <span class="flavor-name">Caramel beurre salé</span>
+        <span class="flavor-desc">Le caramel fond, la fleur de sel réveille tout.</span>
+      </button>
+      <button class="flavor" role="radio" aria-checked="false" data-pick="cacahuete" type="button">
+        <span class="flavor-name">Cacahuète</span>
+        <span class="flavor-desc">Croquant, généreux, un peu salé.</span>
+      </button>
+      <button class="flavor" role="radio" aria-checked="false" data-pick="speculoos" type="button">
+        <span class="flavor-name">Spéculoos</span>
+        <span class="flavor-desc">Les épices du biscuit, version cookie.</span>
+      </button>
+    </div>
+    <p class="note">Une version vegan existe aussi, mais elle part vite : mieux vaut passer tôt.</p>
+  </section>
+
+  <section class="oven" id="four" aria-labelledby="four-titre">
+    <div class="oven-intro">
+      <h2 id="four-titre">Et le reste du four</h2>
+      <p>Une boulangerie avant tout. Le pain, les viennoiseries et les gâteaux bretons sont faits sur place.</p>
+    </div>
+    <ul class="oven-list">
+      <li>
+        <h3>Baguette au sésame</h3>
+        <p>La baguette croustillante que beaucoup de clients citent en premier.</p>
+      </li>
+      <li>
+        <h3>Kouign-amann</h3>
+        <p>Le gâteau breton, beurré et caramélisé.</p>
+      </li>
+      <li>
+        <h3>Canelés</h3>
+        <p>Croûte foncée, cœur moelleux.</p>
+      </li>
+      <li>
+        <h3>Viennoiseries</h3>
+        <p>Croissants et compagnie, pour le petit-déjeuner ou le goûter.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="gallery" aria-labelledby="galerie-titre">
+    <h2 id="galerie-titre">Sorti du four</h2>
+    <ul class="gallery-grid">
+      <li class="shot shot-wide"><img data-photo src="photos/cookies.jpg" alt="Cookies du Fournil Vasselot" loading="lazy"><span class="shot-empty">Photo : cookies</span></li>
+      <li class="shot"><img data-photo src="photos/viennoiseries.jpg" alt="Viennoiseries du Fournil Vasselot" loading="lazy"><span class="shot-empty">Photo : viennoiseries</span></li>
+      <li class="shot"><img data-photo src="photos/pain.jpg" alt="Pains du Fournil Vasselot" loading="lazy"><span class="shot-empty">Photo : pain</span></li>
+      <li class="shot shot-wide"><img data-photo src="photos/boutique.jpg" alt="La boutique, 13 rue Vasselot" loading="lazy"><span class="shot-empty">Photo : la boutique</span></li>
+    </ul>
+  </section>
+
+  <section class="proof" aria-label="Avis">
+    <p class="proof-score"><strong>4,4</strong><span> sur 5</span></p>
+    <p class="proof-text">d’après plus de 1 200 avis en ligne. Les clients aiment les cookies et les viennoiseries ; l’affluence est réelle, passez plutôt tôt.</p>
+  </section>
+
+  <section class="custom" id="commande" aria-labelledby="commande-titre">
+    <div class="custom-intro">
+      <h2 id="commande-titre">Commande personnalisée</h2>
+      <p>Un gâteau d’anniversaire, un plateau pour l’équipe, une boîte de cookies à offrir ? Dites-nous ce qu’il vous faut. La boulangerie vous répond pour confirmer la faisabilité, le prix et la date.</p>
+    </div>
+
+    <form class="order" data-order novalidate>
+      <fieldset class="order-types">
+        <legend>Que souhaitez-vous commander ?</legend>
+        <div class="choice-grid">
+        <label class="choice">
+          <input type="radio" name="type" value="anniversaire" required>
+          <span class="choice-body"><span class="choice-name">Gâteau d’anniversaire</span><span class="choice-desc">Pour enfants ou adultes, avec le thème et l’inscription de votre choix.</span></span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="type" value="mariage" required>
+          <span class="choice-body"><span class="choice-name">Mariage ou grande fête</span><span class="choice-desc">Pièce montée, gâteau à étages, desserts pour beaucoup d’invités.</span></span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="type" value="cookies" required>
+          <span class="choice-body"><span class="choice-name">Boîte de cookies</span><span class="choice-desc">Cadeau, anniversaire ou équipe : un assortiment des trois saveurs.</span></span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="type" value="viennoiseries" required>
+          <span class="choice-body"><span class="choice-name">Plateau de viennoiseries</span><span class="choice-desc">Petit-déjeuner d’équipe, brunch en famille, réunion.</span></span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="type" value="sale" required>
+          <span class="choice-body"><span class="choice-name">Plateau salé</span><span class="choice-desc">Mini-sandwichs, quiches et pains garnis pour un buffet.</span></span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="type" value="pain" required>
+          <span class="choice-body"><span class="choice-name">Pains en grande quantité</span><span class="choice-desc">Baguettes, pains spéciaux ou pains de mie pour un événement.</span></span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="type" value="saison" required>
+          <span class="choice-body"><span class="choice-name">Spécialité de saison</span><span class="choice-desc">Galette des rois, bûche de Noël, gâteau de Pâques.</span></span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="type" value="autre" required>
+          <span class="choice-body"><span class="choice-name">Autre demande</span><span class="choice-desc">Une idée précise ? Décrivez-la, la boulangerie répondra.</span></span>
+        </label>
+        </div>
+        <p class="error" id="err-type" role="alert" hidden>Choisissez un type de commande.</p>
+      </fieldset>
+
+      <div class="fields">
+        <div class="field">
+          <label for="people">Nombre de personnes</label>
+          <input id="people" name="people" type="number" inputmode="numeric" min="1" max="500" placeholder="Par exemple 10">
+        </div>
+        <div class="field">
+          <label for="date">Date souhaitée</label>
+          <input id="date" name="date" type="date" required aria-describedby="err-date">
+          <p class="error" id="err-date" role="alert" hidden>Indiquez la date à laquelle vous souhaitez récupérer la commande.</p>
+        </div>
+        <div class="field field-wide">
+          <label for="diet">Allergies ou régime <span class="optional">(facultatif)</span></label>
+          <input id="diet" name="diet" type="text" placeholder="Sans gluten, vegan, fruits à coque…">
+        </div>
+        <div class="field field-wide">
+          <label for="details">Votre idée en quelques mots</label>
+          <textarea id="details" name="details" rows="4" placeholder="Thème, parfum, inscription sur le gâteau, budget…"></textarea>
+        </div>
+        <div class="field">
+          <label for="name">Votre nom</label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="err-name">
+          <p class="error" id="err-name" role="alert" hidden>Indiquez votre nom.</p>
+        </div>
+        <div class="field">
+          <label for="phone">Téléphone</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required aria-describedby="err-phone" placeholder="06 12 34 56 78">
+          <p class="error" id="err-phone" role="alert" hidden>Indiquez un numéro de téléphone valide.</p>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Préparer ma demande</button>
+      <p class="note">Aucune commande n’est validée tant que la boulangerie ne vous a pas confirmé. Prévoyez quelques jours pour les gâteaux personnalisés.</p>
+
+      <div class="result" data-result hidden tabindex="-1" aria-live="polite">
+        <h3>Votre demande est prête</h3>
+        <p class="result-text" data-result-text></p>
+        <div class="actions">
+          <a class="btn btn-primary" data-result-mail href="#" hidden>Envoyer par e-mail</a>
+          <button class="btn btn-ghost" type="button" data-copy>Copier le message</button>
+          <a class="btn btn-ghost" href="tel:+33299790207">Appeler la boulangerie</a>
+        </div>
+        <p class="note" data-copy-status role="status"></p>
+      </div>
+    </form>
+  </section>
+
+  <section class="visit" id="infos" aria-labelledby="infos-titre">
+    <div class="visit-info">
+      <h2 id="infos-titre">Venir nous voir</h2>
+      <address>
+        13 rue Vasselot<br>
+        35000 Rennes
+      </address>
+      <p><a class="tel" href="tel:+33299790207">02 99 79 02 07</a></p>
+
+      <h3 class="hours-title">Horaires</h3>
+      <table class="hours" data-hours>
+        <tbody>
+          <tr data-day="1"><th scope="row">Lundi</th><td>Fermé</td></tr>
+          <tr data-day="2"><th scope="row">Mardi</th><td>7 h – 20 h</td></tr>
+          <tr data-day="3"><th scope="row">Mercredi</th><td>7 h – 20 h</td></tr>
+          <tr data-day="4"><th scope="row">Jeudi</th><td>7 h – 20 h</td></tr>
+          <tr data-day="5"><th scope="row">Vendredi</th><td>7 h – 20 h</td></tr>
+          <tr data-day="6"><th scope="row">Samedi</th><td>7 h – 20 h</td></tr>
+          <tr data-day="0"><th scope="row">Dimanche</th><td>7 h – 20 h</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Horaires relevés dans des annuaires, à confirmer avec la boulangerie.</p>
+
+      <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Le+Fournil+Vasselot+13+rue+Vasselot+Rennes" target="_blank" rel="noopener">Itinéraire</a>
+    </div>
+
+    <div class="map">
+      <iframe title="Carte : Le Fournil Vasselot, 13 rue Vasselot, Rennes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=Le+Fournil+Vasselot,+13+rue+Vasselot,+35000+Rennes&amp;output=embed"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p><strong>Le Fournil Vasselot</strong> · 13 rue Vasselot, Rennes</p>
+  <p class="demo">Maquette de démonstration. Textes, horaires et visuels à valider avec la boulangerie.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
